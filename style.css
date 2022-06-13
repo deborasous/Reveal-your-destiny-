@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  width: 100%;
+  height: 100%;
+  color: rgb(112, 107, 117);
+  background: rgb(248, 246, 250);
+  transition: background 0.5s linear, color 0.5s linear;
+}
+
+body.dark{
+  background-color: rgb(51, 51, 51);
+  color: rgb(248, 246, 250);
+}
+
+#container {
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+  max-width: 29rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentDark{
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  display: flex;
+}
+
+label{
+  background-color: rgb(51, 51, 51);
+  border-radius: 40%;
+  display: inline-block;
+ width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.5s linear;
+}
+
+body.dark label{
+  background-color: rgb(248, 246, 250);
+}
+
+.contentDark input{
+  visibility: hidden;
+}
+
+#btn{
+  justify-content: end;
+  align-items: flex-end;
+}
+
+h1{
+  margin-block: 1.4rem;
+  font-size: 2.4rem;
+}
+
+p{
+  margin-bottom: 2rem;
+}
+
+ #question {
+  padding: 0.9rem 0.725rem;
+  border-radius: 5px;
+  border-color: rgb(198, 201, 204);
+  font-size: 1.125rem;
+}
+
+input, #button{
+  display: block;
+  width: 100%; 
+}
+
+input::placeholder{
+  color: rgb(187, 187, 187);
+}
+
+#button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: rgb(141, 46, 204);
+  color: azure;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  border: blueviolet;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: filter 0.2s;
+}
+
+#button:hover{
+  filter: brightness(1.2);
+}
+
+#answer {
+  margin-top: 2rem;
+  transition: opacity 1s;
+}
+
+#answer div {
+  font-weight: normal;
+  font-size: 1.125rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+#answer.dark{
+  color: azure;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destino</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="contentDark">
+      <input type="checkbox" id="btn" name="btn">
+      <label for="btn"></label>
+    </div>
+    <div class="formulary">
+      <img src="./cristal-ball-purple.png" id="image"
+        alt="Desenho de uma bola de cristal azul claro com base azul escuro">
+      <h1>Vou revelar seu destino!</h1>
+
+      <p>Clique em fazer uma pergunta para que seu destino seja revelado</p>
+      <input type="text" name="" id="question" placeholder="Faça uma pergunta">
+      <button id="button" onclick="askQuestion()">Fazer pergunta</button>
+    </div>
+
+    <h3 id="answer"></h3>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
